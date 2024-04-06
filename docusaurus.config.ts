@@ -5,7 +5,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 const config: Config = {
   title: "Repository-base Deploy ✨",
   tagline:
-    "Everything you need to build a Deployment Repository for Full-Stack Web Applications.",
+    "A Step-by-Step Guide to create a Deployment Repository for Web App projects.",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -71,7 +71,6 @@ const config: Config = {
           position: "left",
           label: "Tutorial",
         },
-
         {
           href: "https://github.com/jesusandres31/deployment-guide",
           label: "GitHub",
