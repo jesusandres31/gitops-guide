@@ -1,41 +1,50 @@
-# Website
+# Repository-base Deploy ✨
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
-
-### Installation
-
-```
-$ yarn
-```
+This project is a step-by-step guide to creating a Deployment Repository for Web App projects.
 
 ### Local Development
 
-```
-$ yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
+1. Clone the repository:
 
 ```
-$ yarn build
+git clone https://github.com/jesusandres31/repository-base-deploy.git
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+2. Instgall dependencies:
+
+```
+cd repository-base-deploy
+npm install
+```
+
+3. Start the project:
+
+```
+npm start
+```
+
+### Contributing
+
+1. Create a new feature branch:
+
+```
+git checkout -b feature/my-feature
+```
+
+2. Make your changes and commit them:
+
+```
+git commit -am "Add new feature"
+```
+
+3. Push your branch to the repository:
+
+```
+git push origin feature/my-feature
+```
+
+6. Open a pull request against the `master` branch on GitHub.
 
 ### Deployment
 
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+The project is deployed on Cloudflare Pages and automatically triggers deployment whenever code is merged into the `master` branch. You can access the deployed website at [https://repository-base-deploy.pages.dev/](https://repository-base-deploy.pages.dev/).
