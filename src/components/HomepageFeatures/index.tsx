@@ -10,32 +10,35 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: "Easy to Use",
-    Svg: require("@site/static/img/undraw_server_cluster_jwwq.svg").default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
-  },
-  {
-    title: "Focus on What Matters",
+    title: "Collaborative Deployment Workflow",
     Svg: require("@site/static/img/undraw_team_re_0bfe.svg").default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Encourage team involvement in deployments by offering a centralized
+        repository for contribution to strategies, sharing insights, and
+        collective issue resolution.
       </>
     ),
   },
   {
-    title: "Powered by React",
-    Svg: require("@site/static/img/undraw_google_docs_re_evm3.svg").default,
+    title: "Streamlined Deployment Process",
+    Svg: require("@site/static/img/undraw_server_cluster_jwwq.svg").default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Optimize deployment across different environments with clear
+        instructions, scripted procedures, and best practices to minimize
+        downtime and ensure smooth transitions.
+      </>
+    ),
+  },
+  {
+    title: "GitOps Documentation",
+    Svg: require("@site/static/img/undraw_version_control_re_mg66.svg").default,
+    description: (
+      <>
+        Use Git repositories as a single source of truth for managing
+        infrastructure and deployments files to enables version-controlled
+        documentation alongside your codebase.
       </>
     ),
   },

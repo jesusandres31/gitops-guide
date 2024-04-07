@@ -5,8 +5,8 @@ import type * as Preset from "@docusaurus/preset-classic";
 const config: Config = {
   title: "Repository-base Deploy ✨",
   tagline:
-    "A Step-by-Step Guide to create a Deployment Repository for Web App projects.",
-  favicon: "img/favicon.svg",
+    "A Step-by-Step Guide to Create a Deployment Repository for Web App projects.",
+  favicon: "img/gitops.webp",
 
   // Set the production url of your site here
   url: "https://repository-base-deploy.pages.dev/",
@@ -91,7 +91,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Repository-base Deploy, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Repository-base Deployment Guide, Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
