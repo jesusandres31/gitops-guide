@@ -6,10 +6,10 @@ const config: Config = {
   title: "Repository-base Deploy ✨",
   tagline:
     "A Step-by-Step Guide to create a Deployment Repository for Web App projects.",
-  favicon: "img/favicon.ico",
+  favicon: "img/favicon.svg",
 
   // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://repository-base-deploy.pages.dev/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -62,14 +62,14 @@ const config: Config = {
       title: "Repository-base Deploy ✨",
       logo: {
         alt: "My Site Logo",
-        src: "img/logo.svg",
+        src: "img/gitops.webp",
       },
       items: [
         {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
           position: "left",
-          label: "Tutorial",
+          label: "Get Started",
         },
         {
           href: "https://github.com/jesusandres31/deployment-guide",

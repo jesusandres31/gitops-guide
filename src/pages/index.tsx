@@ -33,8 +33,9 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      // title={`${siteConfig.title}`}
+      title=""
+      description="A Step-by-Step Guide to create a Deployment Repository for Web App projects"
     >
       <HomepageHeader />
       <main>
