@@ -4,6 +4,35 @@ sidebar_position: 1
 
 # Deploy App in a VPS
 
+```sh
+// you can use $HOME or ~/
+
+// create ssh key:
+ssh-keygen -C hst-dell -f "$HOME/.ssh/id_rsa_test"
+cat $HOME/.ssh/id_rsa_test.pub
+ls $HOME/.ssh
+
+// compare a fingerprint:
+ssh-keygen -lf $HOME/.ssh/id_rsa_test.pub
+
+// strat ssh agent (bash):
+eval `ssh-agent -s`
+
+// list added keys to ssh agent
+ssh-add -l
+
+// add to ssh agent:
+ssh-add $HOME/.ssh/id_rsa_test
+
+// ssh config file:
+// ~/.ssh/config
+# GitHub
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa_test
+```
+
 Add **Markdown or React** files to `src/pages` to create a **standalone page**:
 
 - `src/pages/index.js` → `localhost:3000/`
