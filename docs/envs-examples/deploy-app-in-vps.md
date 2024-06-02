@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # Deploy App in a VPS
 
+## Clone GitHub repository with ssh
+
 ```sh
 // you can use $HOME or ~/
 
