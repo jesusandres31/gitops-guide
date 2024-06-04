@@ -5,34 +5,24 @@ sidebar_position: 1
 
 # Introduction
 
-The deployment process of web applications can be confusing due to its varied approaches and the additional tasks involved. While services, containers, and continuous integration and deployment environments can enhance this process, they don't always ensure an optimal solution. The lack of documentation can still lead to confusion for certain team members. This guide aims to establish a deployment strategy for small software development teams, inspired by GitOps methodology. By simplifying the complexities of web application deployment, even in smaller environments, the proposed strategy seeks to execute the deployment process systematically and efficiently.
+Deploying web applications can be complex and confusing due to varied approaches and additional tasks. While services, containers, and CI/CD environments can enhance the process, the lack of documentation from developers about their deployment steps can still lead to confusion among team members. This guide establishes a deployment strategy for small software development teams, inspired by GitOps methodology, aiming to simplify the deployment process and execute it systematically and efficiently.
 
-## Collaborative Deployment Workflow
+_With this approach, the team will achieve:_
 
-Encourage team involvement in deployments by offering a centralized
-repository for contribution to strategies, sharing insights, and
-collective issue resolution.
+- 🚀 Collaborative Deployment Workflow
 
-<!--
- <Image alt="Texto alternativo" src="../static/img/undraw_team_re_0bfe.svg" />
- -->
+> Centralized repository for team contributions, sharing strategies, and resolving issues collectively.
 
-## Streamlined Deployment Process
+- 🚀 Streamlined Deployment Process
 
-Optimize deployment across different environments with clear
-instructions, scripted procedures, and best practices to minimize
-downtime and ensure smooth transitions.
+> Clear instructions, scripts, and best practices for minimizing downtime and ensuring smooth transitions.
 
-<!--
- <Image alt="Texto alternativo" src="../static/img/undraw_server_cluster_jwwq.svg" />
-  -->
+- 🚀 GitOps Documentation
 
-## GitOps Documentation
+> Git repositories as a single source of truth for version-controlled infrastructure and deployment files.
 
-Use Git repositories a s a single source of truth for managing
-infrastructure and deployments files to enables version-controlled
-documentation alongside your codebase.
+## GitOps methodology
 
-<!--
- <Image alt="Texto alternativo" src="../static/img/undraw_version_control_re_mg66.svg" />
- -->
+Before delving into the details, it's important to note that we will base our approach on GitOps methodology, commonly used in larger teams for managing infrastructure and application deployment through version control systems. However, we will adapt this methodology to a smaller scale, leveraging its benefits for smaller teams.
+
+![Alt text](../static/img/gitops-arch.png)
