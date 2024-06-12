@@ -9,15 +9,15 @@ Deploying web applications can be complex and confusing due to varied approaches
 
 _With this approach, the team will achieve:_
 
-- 🚀 Collaborative Deployment Workflow
+- Collaborative Deployment Workflow
 
 > Centralized repository for team contributions, sharing strategies, and resolving issues collectively.
 
-- 🚀 Streamlined Deployment Process
+- Streamlined Deployment Process
 
 > Clear instructions, scripts, and best practices for minimizing downtime and ensuring smooth transitions.
 
-- 🚀 GitOps Documentation
+- GitOps Documentation
 
 > Git repositories as a single source of truth for version-controlled infrastructure and deployment files.
 
