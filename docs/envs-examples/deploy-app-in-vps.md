@@ -7,27 +7,30 @@ sidebar_position: 1
 ## Clone GitHub repository with ssh
 
 ```sh
-// you can use $HOME or ~/
+# you can use $HOME or ~/
 
-// create ssh key:
+# create ssh key:
 ssh-keygen -C test -f "$HOME/.ssh/id_rsa_test"
 cat $HOME/.ssh/id_rsa_test.pub
 ls $HOME/.ssh
 
-// compare a fingerprint:
+# compare a fingerprint:
 ssh-keygen -lf $HOME/.ssh/id_rsa_test.pub
 
-// strat ssh agent (bash):
+# strat ssh agent (bash):
 eval `ssh-agent -s`
 
-// list added keys to ssh agent
+# list added keys to ssh agent
 ssh-add -l
 
-// add to ssh agent:
+# add to ssh agent:
 ssh-add $HOME/.ssh/id_rsa_test
 
-// ssh config file:
-// ~/.ssh/config
+# ssh config file:
+# ~/.ssh/config
+```
+
+```sh
 # GitHub
 Host github.com
   HostName github.com
