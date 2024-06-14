@@ -10,7 +10,7 @@ sidebar_position: 1
 // you can use $HOME or ~/
 
 // create ssh key:
-ssh-keygen -C hst-dell -f "$HOME/.ssh/id_rsa_test"
+ssh-keygen -C test -f "$HOME/.ssh/id_rsa_test"
 cat $HOME/.ssh/id_rsa_test.pub
 ls $HOME/.ssh
 
