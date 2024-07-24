@@ -1,54 +1,54 @@
-import { themes as prismThemes } from "prism-react-renderer";
-import type { Config } from "@docusaurus/types";
-import type * as Preset from "@docusaurus/preset-classic";
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
+import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: "Repository-base Deploy ✨",
+  title: 'Deployment Repository Guide ✨',
   tagline:
-    "A Step-by-Step Guide to Create a Deployment Repository for Web App projects.",
-  favicon: "img/gitops.webp",
+    'A Step-by-Step Guide to Create a Deployment Repository Guide for Web App projects.',
+  favicon: 'img/gitops.webp',
 
   // Set the production url of your site here
-  url: "https://repository-base-deploy.pages.dev/",
+  url: 'https://repository-base-deploy.pages.dev/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/",
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "Repository-base Deploy", // Usually your GitHub org/user name.
-  projectName: "repository-base-deploy", // Usually your repo name.
+  organizationName: 'Deployment Repository Guide', // Usually your GitHub org/user name.
+  projectName: 'repository-base-deploy', // Usually your repo name.
 
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
+    defaultLocale: 'en',
+    locales: ['en'],
   },
 
   presets: [
     [
-      "classic",
+      'classic',
       {
         docs: {
-          routeBasePath: "/",
-          sidebarPath: "./sidebars.ts",
+          routeBasePath: '/',
+          sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/jesusandres31/repository-base-deploy/",
+          editUrl: 'https://github.com/jesusandres31/repository-base-deploy/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/jesusandres31/repository-base-deploy/",
+          editUrl: 'https://github.com/jesusandres31/repository-base-deploy/',
         },
         theme: {
-          customCss: "./src/css/custom.css",
+          customCss: './src/css/custom.css',
         },
       } satisfies Preset.Options,
     ],
@@ -56,41 +56,41 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
+    image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: "Repository-base Deploy ✨",
+      title: 'Deployment Repository Guide ✨',
       logo: {
-        alt: "My Site Logo",
-        src: "img/gitops.webp",
+        alt: 'My Site Logo',
+        src: 'img/gitops.webp',
       },
       items: [
         {
-          type: "docSidebar",
-          sidebarId: "tutorialSidebar",
-          position: "left",
-          label: "Get Started",
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Get Started',
         },
         {
-          href: "https://github.com/jesusandres31/deployment-guide",
-          label: "GitHub",
-          position: "right",
+          href: 'https://github.com/jesusandres31/deployment-guide',
+          label: 'GitHub',
+          position: 'right',
         },
       ],
     },
     footer: {
-      style: "dark",
+      style: 'dark',
       links: [
         {
-          title: "More",
+          title: 'More',
           items: [
             {
-              label: "GitHub",
-              href: "https://github.com/jesusandres31/deployment-guide",
+              label: 'GitHub',
+              href: 'https://github.com/jesusandres31/deployment-guide',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Repository-base Deployment Guide, Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Deployment Repository Guide, Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

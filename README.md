@@ -1,4 +1,4 @@
-# Repository-base Deploy ✨
+# Deployment Repository Guide ✨
 
 This project is a step-by-step guide to creating a Deployment Repository for Web App projects.
 
