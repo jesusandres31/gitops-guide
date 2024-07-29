@@ -2,7 +2,9 @@
 sidebar_position: 2
 ---
 
-# Configuring Git Repositories
+# Clone the Repository in a VPS
+
+If you're going to deploy your app in a VPN and you're using GitHub or any other version control platform that supports tokens, you can follow this strategy to clone your repository.
 
 ## Clone GitHub repository with ssh
 
@@ -16,28 +18,38 @@ Creating a token for each project with the required permissions offers several b
 
 ### Useful Commands
 
+- Create ssh key:
+
 ```sh
 # you can use $HOME or ~/
 
-# create ssh key:
 ssh-keygen -C test -f "$HOME/.ssh/id_rsa_test"
 cat $HOME/.ssh/id_rsa_test.pub
 ls $HOME/.ssh
+```
 
-# compare a fingerprint:
+- Get fingerprint:
+
+```sh
 ssh-keygen -lf $HOME/.ssh/id_rsa_test.pub
+```
 
-# strat ssh agent (bash):
+- Strat ssh agent (bash):
+
+```sh
 eval `ssh-agent -s`
+```
 
-# list added keys to ssh agent
+- List added keys to ssh agent:
+
+```sh
 ssh-add -l
+```
 
-# add to ssh agent:
+- Add to ssh agent:
+
+```sh
 ssh-add $HOME/.ssh/id_rsa_test
-
-# ssh config file:
-# ~/.ssh/config
 ```
 
 ### SSH GitHub Configuration

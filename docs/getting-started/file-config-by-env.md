@@ -2,9 +2,9 @@
 sidebar_position: 3
 ---
 
-# Environment Examples
+# Files Configurations by Environment
 
-Deployment examples in different envs.
+After creating your deployment repository, you can begin configuring it. Below are examples of deployment configurations for different environments.
 
 ```md title="docs/hello.md"
 # Hello
