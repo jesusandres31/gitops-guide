@@ -68,11 +68,16 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Get Started',
+          label: 'Home',
         },
+        // {
+        //   href: 'https://github.com/jesusandres31/deployment-guide',
+        //   label: 'GitHub',
+        //   position: 'right',
+        // },
         {
-          href: 'https://github.com/jesusandres31/deployment-guide',
-          label: 'GitHub',
+          href: 'https://opengitops.dev/',
+          label: 'GitOps Principles',
           position: 'right',
         },
       ],
@@ -84,7 +89,7 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'GitHub',
+              label: 'GitHub repository',
               href: 'https://github.com/jesusandres31/deployment-guide',
             },
           ],
