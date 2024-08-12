@@ -4,9 +4,17 @@ sidebar_position: 1
 
 # Initialize a Deployment Repository
 
+![Alt text](../../static/img/repos.png)
+
 To generate the Deployment Repository, follow these steps.
 
 Let's suppose your app is called "Test App".
+
+## Monolith Setup
+
+#### Visual representation of a Monolith directory structure:
+
+![Alt text](../../static/img/monolith.png)
 
 ## Monorepo Setup
 
@@ -39,6 +47,10 @@ To summarize the above, you can use this command:
 mkdir deployment && cd deployment && git init
 ```
 
+#### Visual representation of a Monorepo directory structure:
+
+![Alt text](../../static/img/monorepo.png)
+
 ## Multirepo Setup
 
 If you are using a multirepo setup, where each part of the project is managed with its own version control, it might look like this:
@@ -69,10 +81,18 @@ To summarize the above, you can use this command:
 mkdir APP_NAME-deployment && cd APP_NAME-deployment && git init
 ```
 
-### Setting up a remote
+#### Visual representation of a Multirepo directory structure:
+
+![Alt text](../../static/img/multirepo.png)
+
+#### Setting up a remote:
 
 Create a repository on your chosen version control platform (GitHub, GitLab, Bitbucket, etc.) and link the remote with the local repository.
 
 ```sh
 user@localhost:~/projects/test-app/test-deployment$ git remote add origin <remote-repo-url>
 ```
+
+## Monolith
+
+Deployment folder here is the same as Monorepo
