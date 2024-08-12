@@ -1,10 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Initialize a Deployment Repository
-
-![Alt text](../../static/img/repos.png)
 
 To generate the Deployment Repository, follow these steps.
 

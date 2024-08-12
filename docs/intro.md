@@ -15,8 +15,8 @@ GitOps is a set of practices that uses Git repositories as the single source of 
 
 ### Benefits of this approach:
 
-- 🚩 **Collaborative Deployment Workflow**: Centralized repository for team contributions, sharing strategies, and resolving issues collectively.
+- **Collaborative Deployment Workflow**: Centralized repository for team contributions, sharing strategies, and resolving issues collectively.
 
-- 🚩 **Streamlined Deployment Process**: Clear instructions, scripts, and best practices for minimizing downtime and ensuring smooth transitions.
+- **Streamlined Deployment Process**: Clear instructions, scripts, and best practices for minimizing downtime and ensuring smooth transitions.
 
-- 🚩 **GitOps Documentation**: Git repositories as a single source of truth for version-controlled infrastructure and deployment files.
+- **GitOps Documentation**: Git repositories as a single source of truth for version-controlled infrastructure and deployment files.
