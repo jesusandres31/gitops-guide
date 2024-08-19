@@ -4,20 +4,24 @@ sidebar_position: 3
 
 # Files Configurations by Environment
 
-After creating your deployment repository, you can begin configuring it. Below are examples of deployment configurations for different environments.
+Once you've created your deployment repository, you can start configuring it. Below are examples of deployment configurations for different environments.
 
-```md title="docs/hello.md"
-# Hello
+### Examples
 
-Deploy App in a VPS
+| Project                              | Link                                                                                                               |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
+| MERN App with pm2 on VPS             | [Template](https://github.com/jesusandres31/repository-base-deploy/tree/master/examples/mern-pm2-vps)              |
+| PERN App with Docker on VPS          | [Template](https://github.com/jesusandres31/repository-base-deploy/tree/master/examples/pern-docker-vps)           |
+| MERN App with Prisma ORM on VPS      | [Template](https://github.com/jesusandres31/repository-base-deploy/tree/master/examples/mern-prisma-vps)           |
+| Spring Boot App on Tomcat on VPS     | [Template](https://github.com/jesusandres31/repository-base-deploy/tree/master/examples/springboot-tomcat-vps)     |
+| React + Pocketbase App on VPS (RHEL) | [Template](https://github.com/jesusandres31/repository-base-deploy/tree/master/examples/react-pocketbase-vps-rhel) |
 
-Deploy Containerized App in a VPS
+### Additional Examples
 
-Deploy Headless CMS App
+| Example                              | Link                                                                                                          |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------- |
+| Bash Script for Pocketbase DB Backup | [Template](https://github.com/jesusandres31/repository-base-deploy/tree/master/examples/pocketbase-db-backup) |
 
-Deploy in CI/CD pipeline
+### Contribute
 
-Deploy in Cloud Services
-
-Deploy in SaaS services
-```
+If you would like to contribute new examples, you can do so [here](https://github.com/jesusandres31/repository-base-deploy/).

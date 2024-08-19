@@ -1,3 +1,0 @@
-ec2-user@ec2-3-17-233-88.us-east-2.compute.amazonaws.com
-
-ssh key: G:\My Drive\jes.devlights\dev\ctes-f5-app
