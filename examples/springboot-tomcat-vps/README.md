@@ -1,27 +1,23 @@
-# ticks-deploy
+# testapp-deploy
 
 # server
 
-ip: 192.168.200.101
-user: ticks
-psswd: ticks123
+redacted
 
-# deploy ticks
+# deploy testapp
 
 ### MySql
 
 1. install mysql
-
-- psswd: Root123-
 
 1. restore database
 
 ```
 mysql -u root -p
 
-CREATE DATABASE ticks;
+CREATE DATABASE testapp;
 
-mysql -u root -p ticks < dump-ticks-202310121717.sql
+mysql -u root -p testapp < dump-testapp.sql
 
 -
 
@@ -29,7 +25,7 @@ mysql -u root -p
 
 SHOW DATABASES;
 
-USE ticks;
+USE testapp;
 
 SHOW TABLES;
 
@@ -71,18 +67,18 @@ sudo systemctl status tomcat9
 ```
 DB_URL=jdbc:mysql://localhost
 DB_PORT=3306
-DB_NAME=ticks
+DB_NAME=testapp
 DB_USER=root
 DB_PASSWORD=
 ```
 
-1. cd ticks-feature-show-tick/
+1. cd testapp-feature-show-tick/
 
 1. sudo nano src/main/resources/application.properties
 
 ```
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-spring.datasource.url=jdbc:mysql://localhost:3306/ticks
+spring.datasource.url=jdbc:mysql://localhost:3306/testapp
 spring.datasource.username=root
 spring.datasource.password=Root123-
 spring.jpa.hibernate.ddl-auto=update
@@ -110,9 +106,9 @@ web.baseUrl = http://localhost:8080
                 <relativePath/> <!-- lookup parent from repository -->
         </parent>
         <groupId>com.lab</groupId>
-        <artifactId>ticks</artifactId>
+        <artifactId>testapp</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <name>ticks</name>
+        <name>testapp</name>
         <description>Proyecto en desarrollo</description>
         <properties>
                 <java.version>11</java.version>
@@ -124,20 +120,20 @@ web.baseUrl = http://localhost:8080
 
 ```
 
-1. sudo nano src/main/java/com/lab/ticks/TicksApplication.java
+1. sudo nano src/main/java/com/lab/testapp/testappApplication.java
 
 ```java
-package com.lab.ticks;
+package com.lab.testapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer; // add this pkg
 
 @SpringBootApplication
-public class TicksApplication extends SpringBootServletInitializer { // extends the class
+public class testappApplication extends SpringBootServletInitializer { // extends the class
 
         public static void main(String[] args) {
-                SpringApplication.run(TicksApplication.class, args);
+                SpringApplication.run(testappApplication.class, args);
         }
 
 }
@@ -148,12 +144,12 @@ public class TicksApplication extends SpringBootServletInitializer { // extends 
 ```
 mvn clean package
 
-sudo cp target/ticks-0.0.1-SNAPSHOT.war /var/lib/tomcat9/webapps/
+sudo cp target/testapp-0.0.1-SNAPSHOT.war /var/lib/tomcat9/webapps/
 
 ls /var/lib/tomcat9/webapps/
 ```
 
-- go to http://192.168.200.101:8080/ticks-0.0.1-SNAPSHOT
+- go to http://192.168.200.101:8080/testapp-0.0.1-SNAPSHOT
 
 - default admin user:
 
@@ -167,7 +163,7 @@ admin@admin.com
 ```
 cd /var/lib/tomcat9/webapps
 sudo mv ROOT ROOT_backup
-sudo ln -s ticks-0.0.1-SNAPSHOT ROOT
+sudo ln -s testapp-0.0.1-SNAPSHOT ROOT
 sudo service tomcat9 restart
 ```
 
