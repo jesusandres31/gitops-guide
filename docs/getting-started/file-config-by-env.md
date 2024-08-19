@@ -6,7 +6,7 @@ sidebar_position: 3
 
 Once you've created your deployment repository, you can start configuring it. Below are examples of deployment configurations for different environments.
 
-### Examples
+### Project Examples
 
 | Project                              | Link                                                                                                               |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
