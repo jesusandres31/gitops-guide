@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Clone the Repository in a VPS
+# Clone a Repository on a VPS
 
 If you're going to deploy your app in a VPN and you're using GitHub or any other version control platform that supports tokens, you can follow this strategy to clone your repository.
 

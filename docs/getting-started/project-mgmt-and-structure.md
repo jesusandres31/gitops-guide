@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Project Management and Structure
+# Identify Your Repository Structure
 
 When managing web application projects, choosing the right repository structure is crucial. Here are three common approaches:
 

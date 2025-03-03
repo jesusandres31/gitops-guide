@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Template Repositories
+# Start with a Template
 
 Once you've created your deployment repository, you can start configuring it. Below are examples of deployment configurations for different environments.
 
