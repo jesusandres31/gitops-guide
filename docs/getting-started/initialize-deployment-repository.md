@@ -90,7 +90,3 @@ Create a repository on your chosen version control platform (GitHub, GitLab, Bit
 ```sh
 user@localhost:~/projects/test-app/test-deployment$ git remote add origin <remote-repo-url>
 ```
-
-## Monolith
-
-Deployment folder here is the same as Monorepo
